@@ -177,9 +177,14 @@ function esPrimo(num) {
    // [Pista 2]: puedes resolverlo utilizando un `bucle for`.
    // [Nota]: los números negativos, 0 y 1 NO son números primos.
    // Tu código:
-   
+   let multiplos = 0;
+   for (let i = 1; i <= num; i++) {
+       if (num % i === 0) {
+           multiplos++;
+       }
+   }
+   return multiplos==2
 }
-
 
 function esVerdadero(valor) {
    // Si "valor" es verdadero retornar "Soy verdadero".
